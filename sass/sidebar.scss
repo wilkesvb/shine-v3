@@ -1,0 +1,85 @@
+.sidebar {
+	font-size: 1.1em;
+	width: 275px;
+/*	padding-left: 40px;
+*/	margin-bottom: 50px;
+	color: $dkgray;
+	h4 {
+		margin-bottom: 0px;
+		padding: 8px 20px;
+		background: white;
+	}
+	.fitVid {
+		margin-bottom: 10px;
+		p {
+			font-size: .7em;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 15px 20px;
+		li {
+			padding: 5px 0px 5px;
+			a {
+				color: $gray;
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+	}
+	
+	.widget	{
+		margin-bottom: 25px;
+		li.current-menu-item a {
+			color: $red !important;
+		}
+		[class^="menu-"]{
+			ul {
+				background: $ltgray;
+				li {
+					border-bottom: 1px solid $medgray;
+					&:last-child {
+						border-bottom: none;
+					}
+					a {
+						color: $gray;
+						&:hover {
+							color: $red;
+							text-decoration: none;
+						}
+						&:active {
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+		&:first-of-type h4:before {
+			content:"";
+			position: absolute;
+			left: -8px;
+			top: 12px;
+			width: 0; 
+			height: 0; 
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent; 
+			border-right: 8px solid $yellow;
+		}
+	}
+	.widget h4 {
+		position: relative;
+		background: $yellow;	
+	}
+	.widget:last-of-type h4 {
+		background: white;
+	}
+	.textwidget {
+		text-align: center;
+		font-size: .7em;
+		color: $medgray;
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $ltgray;
+	}
+}

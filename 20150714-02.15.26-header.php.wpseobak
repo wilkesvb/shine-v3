@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SHINE Systems & Technologies</title>
+    <meta name="description" content="SHINE Systems & Technologies (SHINE) is an SBA-certified HUBZone small business headquartered in Charlottesville, Virginia. SHINE is at the forefront of innovation in our core competencies of intelligence analytics, identity intelligence, technology integration, educational services, and consulting services. We develop value-driven solutions for our clients across federal, state, and local government as well as the commercial sector using our industry knowledge, service and product expertise, and ground-breaking technical capabilities. In 2013, SHINE was recognized as #307 on the Inc. 500|5000 list of fastest growing private businesses as well as #3 on the Washington Technology Fast 50 fastest growing small businesses in the government market.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <?php if( !is_page_template( 'front-page.php' ) ) :?>
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/page.css" media="screen" type="text/css" />
+    <?php endif;?>
+    <?php wp_head(); ?>
+    <?php if( !is_page_template( 'front-page.php' ) ) :?>
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/page.css" media="screen" type="text/css" />
+    <?php endif;?>
+
+
+</head>
+<body <?php body_class(); ?> >
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+<div class="wrap">
+    <header class="inner-wrap">
+        <div class="logo">
+            <h1>
+                <a href="/">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/SHINE_LOGO_RGB420x209.jpg" alt="SHINE logo">
+                </a>
+            </h1>
+        </div>
+        <div class="float-right">
+            <div class="awards">
+                <a href="/shine-makes-inc-5000-fastest-growing-company-list-second-year-in-a-row/"><img class="award-inc" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/inc2014.png"></a>
+                <a href="/shine-named-washington-technology-fast-50/"><img class="award-fast50" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/ShineFast50-retina.jpg"></a>
+            </div>
+            <div class="clear">
+            </div>
+            <nav class="primary caps">  
+                          
+                <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+
+            </nav>
+        </div>
+    </header>

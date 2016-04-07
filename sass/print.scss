@@ -1,0 +1,13 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/** {
+	float: none;
+	text-align: left;
+}
+.slider, 
+.feature-video,
+.partners {
+	display:none;
+}
+*/

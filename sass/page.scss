@@ -1,0 +1,474 @@
+$dkgray: #555555;
+$gray: #333333;
+$medgray: #c1c1c1;
+$ltgray: #e1e1e1;
+$red: #b32018;
+$yellow: #ffc324;
+
+$papa-bear: 1050px;
+$mama-bear: 850px;
+$baby-bear: 650px;
+
+@import 'sidebar';
+
+.page-title h1 {
+	font-weight: normal;
+	color: white;
+	background: $gray;
+	margin-top: 0px;
+	padding: 15px 30px;
+	-moz-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+}
+
+.content-wrap {
+	margin-right: 270px;
+}
+
+.page-content {
+	float: left;
+	width: 100%;
+	margin-right: -260px;
+	margin-bottom: 85px;
+	padding: 0px 60px 0px 30px;
+	color: $dkgray !important;
+	img {
+		/*display: inline;
+		float: left;
+		margin: 0px 40px 40px 0px;*/
+	}
+	ul,
+	ol {
+		padding-left: 0px;
+		font-size: .8em;
+		list-style-type: disc;
+		list-style-position: inside;
+		li {
+			text-indent: -1.1em;
+		}
+	}
+	ul ul,
+	ol ol,
+	ul ol,
+	ol ul {
+		font-size: 1em;
+		margin: 5px;
+		padding-left: 20px;
+	}
+	li {
+		text-indent: -1.1em;
+		padding-left: 1.1em;
+	}
+	a {
+		font-size: 1em;
+		color: $red;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	h1, h2, h3, h4, h5, h6 {
+		>a {
+			color: $gray;
+			&:hover {
+				color: $red;
+				text-decoration: none;
+			}
+		}
+	}
+	img.size-full {
+		width: 100% !important;
+		height: auto !important;
+	}
+	div[id^="attachment"] {
+		max-width: 100%;
+		img {
+			width: 100% !important;
+			height: auto !important;
+		}
+	}
+	div[id^="gallery"] {
+		img {
+			border: 0px solid transparent !important;
+		}
+	}
+}
+
+.page-template-page-leadership-index {
+	img {
+/*		margin: 0px;
+*/	}
+}
+
+.wp-caption-text {
+	background: $gray;
+	padding: 8px;
+	text-align: center;
+	margin: 0;
+	font-weight: normal;
+	font-size: .7em;
+	color: white;	
+}
+
+.alignleft {
+	float: left; 
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.alignright {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.aligncenter {
+	margin: 20px auto !important;
+}
+.clearleft {
+	clear: left;
+}
+.margin-top {
+	margin-top: 40px;
+}
+.gallery {
+	img {
+		width: 100%;
+		height: auto !important;
+	}
+}
+
+
+.sidebar	{
+	float: right;
+	padding-right: 30px;
+}
+
+.capes {
+	float: left;
+	margin-top: 40px;
+	img {
+		width: 100%;
+		max-width: 300px;
+		height: auto !important;
+/*		display: inline;
+		float: none;
+		margin: 0px 40px 40px 0px;*/
+	}
+	.container {
+/*		margin-left: 190px;
+*/	}
+	h4 {
+		margin-top: 0px;
+	}
+	p {
+		font-size: .8em;
+	}
+}
+
+.capes-button { 
+	position: relative;
+	display: inline;
+	font-size: .7em;
+	text-transform: uppercase;
+	width: 120px;
+	margin: 5px 20px 10px 0px;
+	padding: 4px 40px 5px 15px;
+	color: white;
+	border: none;
+	background: $red;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		background: white;
+	}
+	&:before {
+		height: 10px;
+		width: 2px;
+		right: 16px;
+		top: 7px;
+	}
+	&:after {
+		height: 2px;
+		width: 10px;
+		right: 12px;
+		top: 11px;
+	}
+	&:hover {
+		background: $gray;
+	}
+	a {
+		color: white;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+/*Leadership*/
+.executives {
+	padding-right: 0px;
+	h2 {
+		font-weight: normal;
+		color: $dkgray;
+	}
+}
+
+.exec a, 
+.mid-manager a {
+	a {
+		font-size: .8em;
+		padding: 0px 10px;
+	}
+}
+
+.exec {
+	padding-bottom: 30px;
+	img {
+		width: 100%;
+		max-width: 293px;
+		height: auto !important;
+	}
+	div.title {
+		max-width: 293px;
+		background: $gray;
+		padding: 8px;
+		h4 {
+			text-align: center;
+			margin: 0;
+			font-weight: normal;
+			font-size: 1em;
+			color: white;
+			width: 100%;
+			padding: 0px;
+		}
+		p {
+			margin: 0px;
+			text-align: center;
+			font-size: .7em;
+			text-transform: uppercase;
+			color: $medgray;
+		}
+	}
+	a {
+		font-size: .8em;
+	}
+	>p, 
+	a {
+		padding: 0px 10px;
+	}
+}
+
+.mid-manager,
+.low-manager {
+	margin-bottom: 30px;
+	&:nth-of-type(3) {
+		clear: left;
+	}
+	img {
+		float: left;
+		max-width: 175px;
+		height: auto !important;
+		display: inline;
+		margin: 0px 20px 15px 0px;
+	}
+	div.title {
+		background: none;
+		padding: 0px;
+		h4 {
+			margin: 10px 0px 0px;
+			text-align: left;
+			color: $dkgray;
+			font-weight: bold;
+		}
+		p {
+			text-align: left;
+			color: $medgray;
+			text-transform: uppercase;
+			margin: 0px;
+		}
+	}
+	a {
+		font-size: .8em;
+	}
+}
+
+.low-manager {
+	img {
+		max-width: 130px;
+	}
+	h4 {
+		margin: 0px !important;
+	}
+	a {
+		font-size: 1em;
+	}
+	@media screen and ($mama-bear) {
+		img {
+			display: block;
+		}
+	}
+}
+
+.blog {
+	h1 a,
+	h2 a,
+	h3 a,
+	h4 a,
+	h5 a,
+	h6 a {
+		color: $gray;
+		&:hover {
+			color: $red;
+		}
+	}
+	span {
+		color: $medgray;
+	}
+}
+
+.blog-home{
+	&:last-child {
+		border-bottom: 0px;
+	}
+}
+
+.pagination {
+	>div {
+		text-align: center;
+		margin: 0px;
+	}
+	margin-top: 30px;
+	a {
+		display: inline-block;
+		width: 100px;
+		padding: 8px;
+		font-size: .8em;
+		text-transform: uppercase;
+		background: $red;
+		color: white;
+		&:hover {
+			background: $gray;
+			color: white;
+		}
+	}
+}
+
+.wpcf7 {
+	input, 
+	textarea,
+	select {
+		width: 100%;
+		max-width: 380px;
+		border: 1px solid $medgray;
+	}
+	input[type="submit"] {
+		display: inline-block;
+		width: 100px;
+		padding: 8px;
+		font-size: .8em;
+		text-transform: uppercase;
+		background: $red;
+		color: white;
+		border: 0px;
+		&:hover {
+			background: $gray;
+			color: white;
+		}
+	}
+}
+@media (max-width: $papa-bear) {
+	.exec {
+		width: 50%;
+		&:nth-of-type(3) {
+			clear: left;
+		}
+	}
+}
+
+@media (max-width: $mama-bear) {
+
+}
+@media handheld, only screen and (max-width: 767px) {
+	.exec[class*='col-'] {
+		float: left !important;
+	}
+}
+
+
+@media (max-width: $baby-bear) {
+	h1 {
+		font-size: 1.2em;
+	}
+	blockquote {
+
+		margin: 1em 30px;
+		.h3resize {
+			font-size: 1em !important;
+			text-align: center !important;
+		}	
+	}
+	.page-content {
+		padding-left: 15px;
+		[class^="col-"] {
+			padding-right: 0px;
+		}
+		text-align: center;
+		ul {
+			margin: 0 auto;
+			li {
+				text-align: left;
+			}
+		}
+		img {
+			float: none !important;
+			margin: 15px auto 0px;
+			display: block;
+		}
+		.leadership {
+			h4,
+			p {
+				text-align: center !important;
+			}
+			.exec {
+				float: none;
+				width: 100%;
+				.title {
+					margin: 0 auto;
+				}
+			}
+		}
+		.capes {
+			.container {
+				margin-left: 0px;
+
+			}
+		}
+		.capes-button {
+			margin: 10px auto;
+
+		}
+	}
+	.content-wrap,
+	.page-content,
+	.sidebar {
+		margin-right: 0px !important;
+		width: 100% !important;
+		float: none;
+		display: inline-block;
+	}
+	.page-content {
+		padding-right: 15px;
+	}
+	.sidebar {
+		padding-right: 0px !important;
+	}
+	.blog-home,
+	.single .page-content {
+		text-align: left !important;
+		h2 {
+			font-size: 1em;
+		}
+		.pagination {
+			margin-top: 30px !important;
+		}
+	}
+}

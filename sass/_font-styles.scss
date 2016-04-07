@@ -1,0 +1,157 @@
+/*Font Styles*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
+
+.gray,
+html,
+nav.primary a,
+a:hover {
+	color: $gray;
+}
+
+.medgray {
+	color: $medgray;
+}
+
+.ltgray {
+	color: $ltgray;
+}
+
+.red {
+	color: $red;
+}
+
+.yellow {
+	color: $yellow
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+li.current-menu-item a {
+	color: $red;
+}
+
+.link-red a {
+	color: $red;
+	&:hover { 
+		text-decoration: underline;
+	}
+}
+
+/*end OOCSS*/
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+
+address {
+	font-style: inherit;
+}
+
+p,
+a,
+.fp-label,
+footer {
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+a {
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	text-overflow: ellipsis;
+}
+
+.fp-label {	
+	font-weight: bold;
+}
+
+.fp-time {
+	font-size: .7em;
+	text-transform: uppercase;
+}
+
+.feature-summary .widget {
+	h4 {
+		text-transform: uppercase;
+		display: block;
+		margin: 0px 0px 10px;
+		padding: 5px 10px;
+		background: $red;
+		color: white;
+	}	
+	.textwidget {
+		margin: 0px;
+		padding: 0px 10px !important;
+		font-size: .8em;
+	}
+}
+
+.feature-video {
+	color: $medgray;
+	font-size: .7em;
+}
+
+footer {
+	h4, a, p {
+		color: $medgray;
+		font-size: 1em;
+		font-weight: normal;
+	}	
+	h4 {
+		text-transform: uppercase;
+	}
+	ul {
+		padding: 0;
+		li li {
+			padding-left: 1em;
+			line-height: 0em;
+		}
+	}
+	address {
+		color: $medgray;
+	}
+}
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff') format('woff'),
+       url('../fonts/fontello.ttf') format('truetype'),
+       url('../fonts/fontello.svg?#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-size: 1.8em;
+  font-weight: normal;
+  speak: none; 
+  text-decoration: inherit;
+  display: inline-block;
+  width: 1em;
+  margin-right: .8em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
+ 
+.icon-twitter:before { content: '\e800'; } /* '' */
+.icon-linkedin:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-rss:before { content: '\e803'; } /* '' */
+
+.social {
+	ul li {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,1 @@
+(function(e){e.noConflict();jQuery(document).ready(function(e){e(".fitVid").fitVids();e("#demo1").scrollbox();e("#demo5").scrollbox({direction:"h",linear:"true",step:1,delay:0});e("nav.primary ul > li:not(:has(>ul))").css("border-left","1px solid white")})})(jQuery);
