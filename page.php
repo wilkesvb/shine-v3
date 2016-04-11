@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Singe Page*/
+/*Template Name: Single Page*/
 ?>
 
 <?php get_header(); ?>

@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Singe Page*/
+/*Template Name: 404 Page*/
 ?>
 
 <?php get_header(); ?>
