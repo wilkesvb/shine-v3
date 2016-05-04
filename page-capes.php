@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Capabilities Index*/
+/*Template Name: Capabilities*/
 ?>
 
 <?php get_header(); ?>
@@ -23,8 +23,6 @@
 				<p><?php _e( 'Sorry, no pages matched your criteria' ); ?></p>
 				
 				<?php endif; ?>
-				
-				<?php get_template_part ( '/partials/part' , 'capes-summary' ); ?>
 
 			</div>
 
