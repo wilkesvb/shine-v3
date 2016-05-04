@@ -9,7 +9,7 @@ $papa-bear: 1050px;
 $mama-bear: 850px;
 $baby-bear: 650px;
 
-@import 'sidebar';
+
 
 .page-title h1 {
 	font-weight: normal;
@@ -472,3 +472,5 @@ $baby-bear: 650px;
 		}
 	}
 }
+
+@import 'sidebar';

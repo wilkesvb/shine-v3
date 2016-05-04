@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Single Page*/
+/*Template Name: Capabilities*/
 ?>
 
 <?php get_header(); ?>
@@ -16,7 +16,7 @@
 
 			<div class="page-content">
 
-				<p><?php the_content(); ?></p>
+				<?php the_content(); ?>
 
 				<?php endwhile; else : ?>
 
@@ -28,7 +28,7 @@
 
 		</div>
 
-		<?php get_sidebar( 'about' ); ?>
+		<?php get_sidebar( 'capes' ); ?>
 
 		<div class="clear"></div>
 
