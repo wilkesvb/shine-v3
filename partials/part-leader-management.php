@@ -21,7 +21,7 @@
 
 		<div class="title">
 
-			<h4><?php the_field( 'exec_name' ); ?></h4>
+			<h4><?php the_title(); ?></h4>
 
 			<p><?php the_field( 'exec_title' ); ?></p>
 
