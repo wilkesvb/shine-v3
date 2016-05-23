@@ -4,18 +4,18 @@
 // Add pages you'd like to exclude in the exclude here
 wp_list_pages(
   array(
-    'exclude' => '',
+    'exclude' => '7123, 7120, 7122, 7121, 7118, 7119,7251', // These are the membership pages/employee portal
     'title_li' => '',
   )
 );
 ?>
 </ul>
 
-<h2 id="posts">News</h2>
+<h2 id="posts">Posts</h2>
 <ul>
 <?php
 // Add categories you'd like to exclude in the exclude here
-$cats = get_categories('exclude=');
+$cats = get_categories('exclude=13');
 foreach ($cats as $cat) {
   echo "<li><h3>".$cat->cat_name."</h3>";
   echo "<ul>";
