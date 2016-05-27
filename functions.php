@@ -13,6 +13,17 @@ function shine_theme_styles() {  /*wpt is for name spacing, unique so it doesn't
 }
 add_action( 'wp_enqueue_scripts', 'shine_theme_styles' );
 
+function home_page_styles() {  /*wpt is for name spacing, unique so it doesn't conflict with other functions or theme calls*/
+	
+	$homepage = 'home';
+
+	if ( is_page( $homepage ) ) {
+		wp_enqueue_style( 'home_css', get_template_directory_uri() . '/stylesheets/home.css' );
+	}
+}
+
+add_action( 'wp_enqueue_scripts', 'home_page_styles' );
+
 
 function shine_theme_js() {
 
