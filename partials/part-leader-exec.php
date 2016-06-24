@@ -5,7 +5,7 @@
 	<?php 
 
 		$args = array(
-			'post_type' => 'leadership'
+			'post_type' => 'exec-team'
 		);
 		$query = new WP_Query( $args );
 

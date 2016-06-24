@@ -3,7 +3,7 @@
 	<?php 
 
 		$args = array(
-			'post_type' => 'lowermanagers'
+			'post_type' => 'lower-management'
 		);
 		$query = new WP_Query( $args );
 

@@ -15,10 +15,7 @@
          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/page.css" media="screen" type="text/css" />
     <?php endif;?>
     <?php wp_head(); ?>
-    <?php if( !is_page_template( 'front-page.php' ) ) :?>
-         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/page.css" media="screen" type="text/css" />
-    <?php endif;?>
-
+  
 
 </head>
 <body <?php body_class(); ?> >

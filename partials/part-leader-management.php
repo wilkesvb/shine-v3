@@ -5,7 +5,7 @@
 	<?php 
 
 		$args = array(
-			'post_type' => 'midmanagers'
+			'post_type' => 'management-team'
 		);
 		$query = new WP_Query( $args );
 

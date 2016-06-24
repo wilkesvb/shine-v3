@@ -4,7 +4,7 @@
 // Add pages you'd like to exclude in the exclude here
 wp_list_pages(
   array(
-    'exclude' => '7123, 7120, 7122, 7121, 7118, 7119,7251, 7108, 7111', // These are the membership pages/employee portal/case study page
+    'exclude' => '7123, 7120, 7122, 7121, 7118, 7119,7251, 7108, 7111, 7363', // These are the membership pages/employee portal/case study page
     'title_li' => '',
   )
 );
