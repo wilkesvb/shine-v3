@@ -1,7 +1,7 @@
 <?php 
 
 	$args = array(
-		'post_type' => 'capabilitysummary'
+		'post_type' => 'capability_summary'
 	);
 	$query = new WP_Query( $args );
 
