@@ -9,19 +9,29 @@
     <title>SHINE Systems & Technologies</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- Front Page CSS move to functions.php? -->
+    <?php wp_head(); ?>
     <?php if( !is_page_template( 'front-page.php' ) ) :?>
          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/page.css" media="screen" type="text/css" />
     <?php endif;?>
-    <?php wp_head(); ?>
-  
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico" type="image/x-icon" />
+    <meta property="og:image" content="/wp-content/uploads/2015/01/SHINE_LOGO_RGB420x209.jpg" />
+
+    <!-- Lead Forensics Tracking Script -->
+    <script type="text/javascript" src="https://secure.leadforensics.com/js/77076.js" ></script>
+    <noscript><img src="https://secure.leadforensics.com/77076.png" style="display:none;" /></noscript>
 
 </head>
 <body <?php body_class(); ?> >
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+<?php employee_bar(); ?>
+
 <div class="wrap">
     <header class="inner-wrap">
         <div class="logo">

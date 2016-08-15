@@ -1,0 +1,275 @@
+$dkgray: #555555;
+$gray: #333333;
+$medgray: #c1c1c1;
+$ltgray: #e1e1e1;
+$red: #b32018;
+$yellow: #ffc324;
+
+$papa-bear: 1050px;
+$mama-bear: 850px;
+$baby-bear: 650px;
+
+
+
+
+
+/*Log In Page*/
+.page-id-7119 label,
+.page-id-7120 label[class*="swpm"],
+.page-id-7122 label[class*="swpm"], 
+ {
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+.page-id-7119 input, 
+.page-id-7119 textarea,
+.page-id-7119 select,
+.page-id-7120 input, 
+.page-id-7120 textarea,
+.page-id-7120 select,
+.page-id-7122 input, 
+.page-id-7122 textarea,
+.page-id-7122 select {
+	width: 100%;
+	max-width: 380px;
+	border: 1px solid $medgray;
+}
+
+.page-id-7119 input[type="submit"],
+.page-id-7120 input[type="submit"],
+.page-id-7122 input[type="submit"] {
+	display: inline-block;
+	width: auto;
+	padding: 8px;
+	margin-top: 10px;
+	font-size: .8em;
+	text-transform: uppercase;
+	background: $red;
+	color: white;
+	border: 0px;
+	&:hover {
+		background: $gray;
+		color: white;
+	}
+}
+
+.swpm-join-us-link {
+	display: none !important;
+}
+
+.page-id-7120 input[type="checkbox"] {
+    width: auto;
+}
+
+
+/*Portal Page*/
+
+.emp-sidebar,
+.emp-center h2 {
+	display: none;
+}
+
+.page-template-emp-portal-home.logged-in {
+	.content-wrap,
+	.page-content {
+		width: 100%;
+	}
+	.page-content {
+		padding-right: 0px;
+		padding-left: 0px;
+		section {
+			background: $ltgray;
+			padding-bottom: 10px;
+
+		}
+		.emp-sidebar {
+			display: block;
+			float: left;
+			width: 220px;
+			padding-right: 0px;
+			ul {
+				margin: 0;
+				padding: 15px 15px;
+				list-style-type: none;
+				li {
+					a {
+						padding-left: 0;
+						color: $gray;
+						&:hover {
+							color: $red;
+						}
+					}
+				}
+			}
+		}	
+		.emp-center {
+			padding: 0px 20px;
+			margin: 0 220px;
+			overflow: hidden;
+			h2 {
+				display: block;
+			}
+			section {
+				margin-top: 10px;
+				background: #ffffff;
+			}
+			h4 {
+				margin-top: 0px;
+				color: $red;
+/*				text-transform: uppercase;
+*/				background: $yellow;
+			}
+			.contact {
+				float: left;
+				width: 48%;
+				margin: 0 4% 20px 0;
+				background: $ltgray;
+				&:nth-of-type(even) {
+					margin-right: 0;
+				}
+			}
+		}
+		.right {
+			float: right;
+			h5 {
+				padding: 5px;
+				font-size: 1em;
+				text-align: left;
+			}
+			a {
+/*				padding-left: 0px;
+*/				margin: 20px auto;
+			}
+			.store-button {
+				padding-left: 0px !important;
+			}
+			.suggestion-box img {
+				width: 100%;
+				height: auto !important;
+				margin: 30px 0 0;
+			}
+		}
+		h2, h4, p {
+			margin-bottom: 0px;
+			padding: 8px 10px;
+		}
+		h2 {
+			background: white;
+			padding-left: 0px;
+			border-bottom: 10px solid $ltgray;
+
+		}
+		h4 {
+			color: white;
+			background: $red;
+			display: block;
+		}
+		li {
+			padding: 5px 0;
+			text-indent: 0;
+		}
+		.app-logo {
+			display: block;
+			margin: 15px;
+			width: 100%;
+			height: auto !important;
+		}
+
+		.app-logo {
+			max-width: 90px;
+		}
+		.store-button {
+			display: inline-block;
+			float: left;
+			margin: 0 0 15px 15px;
+			width: 40%;
+			height: auto !important;
+		}
+		.culture-calendar {
+			margin: 15px 15px 0px;
+			img {
+				max-width: 100%;
+				height: auto !important;
+			}
+		}
+	}
+	section > a {
+		padding-left: 15px;
+	}
+}
+
+.hide-mama {
+	display: none;
+}
+
+@media screen and (max-width: $papa-bear ) {
+	.contact {
+		float: none !important;
+		clear: both;
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: $mama-bear ) {
+	.logged-in .emp-sidebar {
+		display: none !important;
+	}
+	.logged-in .hide-mama, 
+	.logged-in .hide-mama .emp-sidebar {
+		display: block !important;
+	}
+	.emp-center {
+		width: 100%;
+		float: none;
+		margin: 0 !important;
+	}
+	.emp-sidebar {
+		float: left !important;
+		width: 50% !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		.app-logo {
+			max-width: 120px !important;
+		}
+	}
+	.contact {
+		float: left !important;
+		clear: none;
+		width: 48% !important;
+		margin: 0 4% 20px 0 !important;
+		background: $ltgray;
+		&:nth-of-type(even) {
+			margin-right: 0 !important;
+		}
+	}
+	.right {
+		.col-1-2 {
+
+		}
+	}
+}
+
+@media screen and (max-width: $baby-bear ) {
+	.contact {
+		float: none !important;
+		clear: both;
+		width: 100% !important;
+	}
+	.emp-sidebar {
+		float: none !important;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100% !important;
+		h5 {
+			text-align: center !important;
+		}
+		.app-logo, img {
+			float: none;
+			margin: 0 auto !important;
+		}
+	}
+	.right a {
+		padding-left: 0px !important;
+	}
+}
