@@ -68,7 +68,8 @@
 	}
 	.widget h4 {
 		position: relative;
-		background: $yellow;	
+		background: $yellow;
+		text-transform: uppercase;	
 	}
 	.widget:last-of-type h4 {
 		background: white;
@@ -80,5 +81,42 @@
 		margin-bottom: 40px;
 		padding-bottom: 40px;
 		border-bottom: 1px solid $ltgray;
+	}
+	.widget form[role="search"] {
+		input {
+			width: 70%;
+			padding: 0px 5px;
+			margin-top: 10px;
+			
+		}
+		input[type="submit"] {
+			width: 30%;
+			margin-left: -5px;
+			padding: 8px;
+			font-size: .8em;
+			text-transform: uppercase;
+			background: $red;
+			color: white;
+			border: 0px;
+			&:hover {
+				background: $gray;
+				color: white;
+			}
+		}
+		label{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: $baby-bear) {
+	.widget form[role="search"] {
+		input { 
+			max-width: 590px;
+			width: 75% !important;
+		}
+		input[type="submit"] {
+			width: 25% !important;
+		}
 	}
 }

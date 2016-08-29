@@ -12,7 +12,7 @@
 
 <div class="capes col-1-3">
 
-	<a href="<?php the_permalink(); ?>"><?php the_field( 'capability_thumbnail' ); ?></a>
+	<a href="<?php the_field( 'capability_link' ) ?>"><?php the_field( 'capability_thumbnail' ); ?></a>
 
 	<div class="container">
 

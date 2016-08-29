@@ -1,13 +1,4 @@
 <?php get_header(); ?>
-
-<?php
-
-if(has_term('job-postings', 'category', $post)) {
-  get_template_part('single-job-postings', 'job-postings');
-} else {
-  get_template_part('single.php');
-}
-?>
 			
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -27,12 +18,14 @@ if(has_term('job-postings', 'category', $post)) {
 
 				<p><?php the_content(); ?></p>
 
+				<?php endwhile; ?>
+
 				<div class="pagination">
 					<div class="nav-previous alignleft"><?php previous_post_link( '%link', 'Previous', TRUE ); ?></div>
-					<div class="nav-next alignright"><?php next_post_link( '%link', 'Next'); ?></div>
+					<div class="nav-next alignright"><?php next_post_link( '%link', 'Next', TRUE); ?></div>
 				</div>
 
-				<?php endwhile; else : ?>
+				<?php else : ?>
 
 				<p><?php _e( 'Sorry, no pages matched your criteria' ); ?></p>
 				

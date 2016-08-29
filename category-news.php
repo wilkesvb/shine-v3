@@ -10,7 +10,11 @@
 
 			<div class="page-content">
 
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+				$query = new WP_Query( 'cat=2&paged=' . $paged); ?>
+
+				<?php if ( $query->have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 				<div class="blog-home blog border-bottom">
 
@@ -22,16 +26,20 @@
 
 				</div>
 
-				<?php endwhile; else : ?>
+				<?php endwhile; ?>
+
+				<div class="pagination">
+					<div class="nav-previous alignleft"><?php next_posts_link( 'Previous' ); ?></div>
+					<div class="nav-next alignright"><?php previous_posts_link( 'Next' ); ?></div>
+				</div>
+
+				<?php else : ?>
 
 				<p><?php _e( 'Sorry, no pages matched your criteria' ); ?></p>
 				
 				<?php endif; ?>
 	
-				<div class="pagination">
-					<div class="nav-previous alignleft"><?php next_posts_link( 'Previous' ); ?></div>
-					<div class="nav-next alignright"><?php previous_posts_link( 'Next' ); ?></div>
-				</div>
+				
 
 			</div>
 

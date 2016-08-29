@@ -353,12 +353,15 @@ $baby-bear: 650px;
 	}
 }
 
-.wpcf7 {
+.wpcf7, 
+form[role="search"] {
 	input, 
 	textarea,
 	select {
 		width: 100%;
 		max-width: 380px;
+		height: 30px;
+		padding: 0px 5px;
 		border: 1px solid $medgray;
 	}
 	input[type="submit"] {
@@ -376,6 +379,21 @@ $baby-bear: 650px;
 		}
 	}
 }
+
+.page-content form[role="search"] {
+	max-width: 100%;
+	label {
+		display: none;
+	}
+	input {
+		width: 60%;
+	}
+	input[type="submit"] {
+		width: 80px;
+		margin-left: -4px;
+	}
+}
+
 @media (max-width: $papa-bear) {
 	.exec {
 		width: 50%;
@@ -400,7 +418,6 @@ $baby-bear: 650px;
 		font-size: 1.2em;
 	}
 	blockquote {
-
 		margin: 1em 30px;
 		.h3resize {
 			font-size: 1em !important;

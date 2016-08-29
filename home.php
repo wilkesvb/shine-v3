@@ -3,7 +3,7 @@
 	<div class="inner-wrap border-bottom margin-bottom">
 
 		<div class="page-title">
-			<h1>Job Postings</h1>
+			<h1>Job Postings2</h1>
 		</div>
 
 		<div class="content-wrap">

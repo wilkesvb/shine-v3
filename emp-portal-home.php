@@ -16,9 +16,9 @@
 
 			<div class="page-content">
 				
-				<?php get_template_part( 'emp-sidebar-left'); ?>
+				<?php get_template_part( '/portal/emp-sidebar-left'); ?>
 
-				<?php get_template_part( 'emp-sidebar-right'); ?>
+				<?php get_template_part( '/portal/emp-sidebar-right'); ?>
 
 				<div class="emp-center">
 					
@@ -44,9 +44,9 @@
 
 				<div class="hide-mama">
 					
-				<?php get_template_part( 'emp-sidebar-left'); ?>
+				<?php get_template_part( '/portal/emp-sidebar-left'); ?>
 
-				<?php get_template_part( 'emp-sidebar-right'); ?>
+				<?php get_template_part( '/portal/emp-sidebar-right'); ?>
 
 				</div>	
 

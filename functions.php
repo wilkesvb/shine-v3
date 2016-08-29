@@ -148,7 +148,7 @@ add_action( 'template_redirect' , 'redirect_logged_in_user' );
 
 function employee_bar() {
 	if ( is_user_logged_in() ) {
-		get_template_part( 'emp-bar' ); }
+		get_template_part( '/portal/emp-bar' ); }
 	}	
 add_action( 'emp_partial' , 'employee_bar' );
 
